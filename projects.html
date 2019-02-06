@@ -1,0 +1,14 @@
+---
+title: Projects
+---
+<h1>Staff</h1>
+
+<ul>
+  {% for project in site.projects %}
+    <li>
+      <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+      <h3>{{ project.status }}</h3>
+      <p>{{ project.summary | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
