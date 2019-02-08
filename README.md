@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://moodule.github.io/">
-    <img src="./assets/img/logo/drop/bicolor/flat/no-border_c.png" alt="Moodule logo" width="72" height="72">
+    <img src="./assets/images/logo/drop/mono-black/flat/no-border_c.png" alt="Moodule logo" width="72" height="72">
   </a>
 </p>
 
 <h3 align="center">Moodule</h3>
 
 <p align="center">
-  A drop of code in the ocean of Open Source.
+  A few drops of code in the ocean of Open Source.
   <br>
   <a href="https://moodule.github.io/projects"><strong>Explore Moodule Projects »</strong></a>
   <br>
