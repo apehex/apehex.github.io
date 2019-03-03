@@ -1,4 +1,16 @@
 ---
+layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+{% for project in site.projects %}
+<article class="container box style1 right">
+    <a href="{{ project.readme }}" class="image fit"><img src="assets/images/bouncing.svg" alt="" /></a>
+    <div class="inner">
+        <header>
+            <h2>{{ project.name }}<br>
+            {{ project.status }}</h2>
+        </header>
+        {{ project.content | markdownify }}
+    </div>
+</article>
+{% endfor %}
