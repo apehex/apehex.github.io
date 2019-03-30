@@ -28,6 +28,8 @@ privacy_policy_url: /privacy-policy
 collections:
   projects:
     output: false
+  rip:
+    output: false
 
 # Layouts
 defaults:
