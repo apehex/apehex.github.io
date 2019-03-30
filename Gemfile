@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # gem "jekyll", "~> 3.8.5"
 
 # Theme
-gem "minima", "~> 2.0"
+gem "jekyll-theme-drop"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
