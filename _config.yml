@@ -20,7 +20,7 @@ gitlab_url:
 instagram_url:
 
 # Optional elements
-logo_url: /assets/images/logo.svg
+logo_url: /assets/images/bouncing.svg
 legal_terms_url: /legal-terms
 privacy_policy_url: /privacy-policy
 
@@ -30,23 +30,6 @@ collections:
     output: false
   rip:
     output: false
-
-# Layouts
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
 
 # Build settings
 theme: jekyll-theme-drop
