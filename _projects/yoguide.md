@@ -2,7 +2,7 @@
 name: Yoguide
 status: Planning
 summary: 
-readme: https://github.com/moodule/beta-moodule
+readme: https://github.com/moodule/yoguide
 ---
 > The situation:
 > - the yogis focus on the asanas and the end result
