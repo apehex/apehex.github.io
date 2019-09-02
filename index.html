@@ -1,16 +1,6 @@
 ---
-layout: default
-title: Home
+layout: redirect
+lang: x-default
+lang-ref: home-page
+forward_url: /en/
 ---
-{% for project in site.projects %}
-<article class="container box style1 right">
-    <a href="{{ project.readme }}" class="image fit"><img src="{{ 'assets/images/bouncing.svg' | absolute_url }}" alt="" /></a>
-    <div class="inner">
-        <header>
-            <h2>{{ project.name }}<br>
-            {{ project.status }}</h2>
-        </header>
-        {{ project.content | markdownify }}
-    </div>
-</article>
-{% endfor %}
