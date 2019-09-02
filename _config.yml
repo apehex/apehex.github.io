@@ -30,6 +30,12 @@ hosting_third_party: github
 
 # Collections
 collections:
+  drafts:
+    output: false
+  home:
+    output: false
+  posts:
+    output: true
   projects:
     output: false
   rip:
@@ -37,11 +43,6 @@ collections:
 
 # Default settings
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      menu: default
   -
     scope:
       path: "en"
