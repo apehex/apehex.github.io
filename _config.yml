@@ -3,7 +3,7 @@ title: Moodule
 subtitle: I write code to solve problems
 description: >- # this means to ignore newlines until "baseurl:"
   Real problems: getting out of bed!
-  Assisting the design of industrial processes or streamlining a digital workflow.
+  Building design tools for industrial processes and streamlining digital workflows otherwise.
 
 # Contact information
 street_address:
@@ -21,8 +21,12 @@ instagram_url:
 
 # Optional elements
 logo_url: /assets/images/bouncing.svg
+favicon_url: /assets/images/favicon.ico
 legal_terms_url: /legal-terms
 privacy_policy_url: /privacy-policy
+
+# Privacy notice
+hosting_third_party: github
 
 # Collections
 collections:
@@ -31,16 +35,37 @@ collections:
   rip:
     output: false
 
+# Default settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      menu: default
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr"
+    values:
+      lang: "fr"
+
 # Build settings
-theme: jekyll-theme-drop
+theme: jekyll-theme-ethereal
 markdown: kramdown
+sass:
+  style: compressed
 plugins:
   - jekyll-feed
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://moodule.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 author: apehex
+copyright_holder: Moodule
 
 # Exclude from processing
