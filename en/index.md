@@ -1,13 +1,6 @@
 ---
-layout: default
+layout: collection
 lang-ref: home-page
-title: "MOODULE"
-subtitle: "Vagabond tinkerer, Open Sourcerer"
+collection: home
+title: "Open Sourcerer / Vagabond Coder"
 ---
-
-{% assign panels = site.home | sort: 'index' %}
-
-{% for item in panels %}
-{% assign content = item.content %}
-{% include panel.html type=item.type id=item.panel-id header=item.header style=item.style content=content %}
-{% endfor %}
