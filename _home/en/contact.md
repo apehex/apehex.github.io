@@ -5,7 +5,7 @@ type: contact
 header:
     title: Contact
     description: >-
-        Tell me, <br/>Is there a place you want to go but cannot access yet ?
+        Tell me, <br/>Is there a place you want to go <br/>But cannot access yet ?
 style:
     background:
         color: color4-alt
