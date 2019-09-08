@@ -1,8 +1,9 @@
 # Site settings
-title: Open Sourcerer & Vagabond Coder
+title: Open Sourcerer / Vagabond Coder
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a vagabond coder, doing my best to give back to Open Source. 
-  I have a kink for matrices, love functional programming and remote places.
+  I'm a vagabond tinkerer, doing my best to give back to Open Source. 
+  I have a kink for tensors, I love functional programming and processing signals for hidden meaning.
+  I spend what's left of my time in remote places, they bring me back to the present to feel and think my way, literally.
 
 # Contact information
 street_address:
@@ -16,11 +17,14 @@ email: apehex@protonmail.com
 # Social settings
 github:
   url: https://github.com/moodule
-  label:
+  label: @moodule
 gitlab:
   url:
   label:
 instagram:
+  url:
+  label:
+medium:
   url:
   label:
 
