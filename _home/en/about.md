@@ -5,7 +5,7 @@ type: generic
 header:
     title: About Me
     description: >-
-        Past, present and future work.
+        Things I learned, <br/>Memories that haunt me, <br/>Fantasies that drive me.
 style:
     size: medium
     text:

@@ -5,7 +5,7 @@ type: generic
 header:
     title: Projects
     description: >-
-        Past, present and future work.
+        What I'm afraid I've done, <br/>What I'm working on, <br/>And What I really want to do :)
 style:
     size: medium
     text:

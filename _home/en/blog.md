@@ -5,8 +5,7 @@ type: generic
 header:
     title: Blog
     description: >-
-        This is my mental 
-content: gallery.html
+        My shrinks' notes.
 style:
     background:
         color: color0
