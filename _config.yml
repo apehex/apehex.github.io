@@ -74,7 +74,7 @@ plugins:
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://moodule.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://moodule.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 author: apehex
 copyright_holder: Moodule
