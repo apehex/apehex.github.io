@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://moodule.github.io/">
-    <img src="./assets/images/logo/drop/background/white_over_jay.png" alt="Moodule logo" width="72" height="72">
+    <img src="./assets/images/logo.png" alt="Moodule logo" width="72" height="72">
   </a>
 </p>
 
