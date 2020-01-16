@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--
+    Ethereal by HTML5 UP
+    html5up.net | @ajlkn
+    Ported into a Jekyll template by MOODULE
+    https://moodule.github.io | @moodule
+    Free for personal and commercial use under the CCA 4.0 license
+-->
+<html lang="en">
+    
+    <head>
+    <title>My Homespace - </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/main.css" /><link rel="alternate" hreflang="en" href="/en/blog/my-homespace/prepare/" /><link rel="icon" href="https://moodule.github.io/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/noscript.css" /></noscript>
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>My Homespace | Open Sourcerer / Vagabond Coder</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="My Homespace" />
+<meta name="author" content="Moodule" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally." />
+<meta property="og:description" content="I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally." />
+<link rel="canonical" href="https://moodule.github.io/en/blog/my-homespace/prepare/" />
+<meta property="og:url" content="https://moodule.github.io/en/blog/my-homespace/prepare/" />
+<meta property="og:site_name" content="Open Sourcerer / Vagabond Coder" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-08T00:00:00+01:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"https://moodule.github.io/en/blog/my-homespace/prepare/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://moodule.github.io/assets/images/logo.png"},"name":"Moodule"},"headline":"My Homespace","dateModified":"2020-01-08T00:00:00+01:00","datePublished":"2020-01-08T00:00:00+01:00","author":{"@type":"Person","name":"Moodule"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://moodule.github.io/en/blog/my-homespace/prepare/"},"description":"I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+    <body class="is-preload">
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <div id="language-selector">
+	<ul class="language"><li>
+		    <a href="https://moodule.github.io/en/blog/my-homespace/prepare/" class="en">en</a>
+		</li></ul>
+</div>
+
+
+            <!-- Wrapper -->
+            <div id="wrapper">
+
+                <section
+class="panel banner 3 right "
+id="banner"><!-- Banner -->
+<div class="content color0 span-3-75">
+    <h1 class="major">Preparations<br />
+    </h1>
+    <p>Just like my physical home, my mental space must be made for my needs.</p>
+    <ul class="actions">
+        <li>
+            <a
+            href="#download-the-files"
+            class="button primary color1 circle icon solid fa-angle-right">
+                Next
+            </a>
+        </li>
+    </ul>
+</div>
+<div
+class="image filtered span-1-75"
+data-position="25% 25%">
+    <img class="lazy-loading" src="https://moodule.github.io/assets/images/placeholder/pillars-of-creation.webp" data-src="https://moodule.github.io/assets/images/content/pillars-of-creation.webp" alt="" />
+</div>
+</section>
+<section
+class="panel generic 2 right color1"
+id="download-the-files"><div class="intro joined color1-alt">
+    <h2 class="major">Get the Required Files</h2>
+    <p>Let's start by downloading the material, we can always think later!</p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-3">
+        <h3 class="major">The Distribution ISO</h3>
+        <p>For Debian, it happens <a href="https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/">here</a>.</p>
+        <h3 class="major">The "Non-Free" Firmware</h3>
+        <p>The drivers can be acquired separately from <a href="https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/">a tarball / zip file</a>.</p>
+        <h3 class="major">Take Advantage Of Your Free Time!</h3>
+        <p>I'd suggest reading the excellent <a href="https://wiki.archlinux.org/">Archlinux wiki</a>.</p>
+        <p>We'll cover lots of ground, most significantly <a href="https://wiki.archlinux.org/index.php/RAID">RAID</a>, <a href="https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system">LUKS and system-wide encryption</a>, <a href="https://wiki.archlinux.org/index.php/LVM">LVM</a> and <a href="https://wiki.archlinux.org/index.php/Dual_boot_with_Windows">dual booting</a>.</p>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color2"
+id="installation-scheme"><div class="intro joined color2-alt">
+    <h2 class="major">The Scheme</h2>
+    <p>Time to plan the installation, while the Internet does its thing.</p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-5">
+        <h3 class="major">The Partition Layout</h3>
+        <pre><code>+---------------------------------------------------------+ +---------------------------+
+| LVM volumes                                             | | LUKS2 encrypted volume    |
+|                                                         | |                           |
+| /dev/lvg/swap ; /dev/lvg/main-root ; etc                | | /data                     |
++---------------------------------------------------------+ |                           |
++---------------------------+ +---------------------------+ |                           |
+| LUKS1 encrypted volume    | | LUKS1 encrypted volume    | |                           |
+|                           | |                           | |                           |
+| /dev/mapper/md0_crypt     | | /dev/mapper/md0_crypt     | |                           |
++---------------------------+ +---------------------------+ |                           |
+| RAID0 array (part 1 of 2) | | RAID0 array (part 2 of 2) | |                           |
+|                           | |                           | |                           |
+| /dev/md0                  | | /dev/md0                  | | /dev/mapper/data_crypt    |
++---------------------------+ +---------------------------+ +---------------------------+
+| /dev/sda1                 | | /dev/sdb1                 | | /dev/sdc1                 |
++---------------------------+ +---------------------------+ +---------------------------+</code></pre>
+    </div>
+    <div class="span-2">
+        <h3 class="major">Enjoy</h3>
+        <p>The partition layout all dressed up. It may not feel as orderly when building.</p>
+        <h3 class="major">Adapt</h3>
+        <p>The commands will all be written for this specific layout. I leave it to you / future-me to think of a mapping from this situation to your problem:<ul><li>devices: /dev/sdX</li><li>file names &amp; paths</li><li>etc</li></ul></p>
+        <p>Better be prepared, things will break!</p>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color3"
+id="usb-drives"><div class="intro joined color3-alt">
+    <h2 class="major">The USB Drives</h2>
+    <p>Prepare the USB drives:<br />- one for the live install<br />- one for the non-free firmware<br />- one for the bootloader (optional)</p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">The Live Install</h3>
+        <pre><code># dd bs=4M status=progress oflag=sync if=~/downloads/debian.iso of=/dev/sdd</code></pre>
+        <h3 class="major">The Non-Free Firmware</h3>
+        <pre><code># mount /dev/sde1 /mnt/usb<br /># unzip ~/downloads/firmware.zip -d /mnt/usb/</code></pre>
+        <h3 class="major">Format a boot drive (optional)</h3>
+        <pre><code># fdisk -c -u /dev/sdf</code></pre>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color4"
+id="backup"><div class="intro joined color4-alt">
+    <h2 class="major">Backup Your Files</h2>
+    <p>There's no may-be, data loss is <strong>guaranted</strong>!<br />Hopefully you're feeling the urge to backup this time?</p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">Encrypt Your Files</h3>
+        <pre><code>$ gpgtar --verbose --encrypt --recipient moodule@protonmail.com \
+        --output /tmp/backup/documents.gpg ~/documents</code></pre>
+        <h3 class="major">Save To A Drive</h3>
+        <pre><code># rsync -avh --progress --update /tmp/backup/ /mnt/usb/backup/</code></pre>
+    </div>
+    <div class="span-3">
+        <h3 class="major">_</h3>
+        <p>Repeat for every directory you care about.</p>
+        <p>You should do this regularly.
+        Instead of keeping old folders / data around, pack it up and breath.</p>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color1"
+id="verify-the-downloaded-material"><div class="intro joined color1-alt">
+    <h2 class="major">Verify The Downloaded Material</h2>
+    <p>Let's ease our paranoia and make sure everything is legit.</p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-3">
+        <h3 class="major">Enlarge Your Web Of Trust</h3>
+        <pre><code>gpg import</code></pre>
+        <h3 class="major">Verify Signatues</h3>
+        <pre><code>gpg --verify file signature</code></pre>
+        <h3 class="major">Verify Checksum</h3>
+        <pre><code>gpg --verify file signature</code></pre>
+        <h3 class="major">Verify Signed Checksum</h3>
+        <pre><code>gpg --verify file signature</code></pre>
+    </div>
+    <div class="span-3">
+        <h3 class="major">_</h3>
+        <p>Import the public keys of the maintainers.</p>
+        <p>Verify that the files are signed with their public keys.</p>
+        <h3 class="major">_</h3>
+        <p>Verify the checksum of the files.</p>
+    </div>
+</div>
+
+
+</section>
+
+
+            </div>
+
+            <!-- Footer -->
+<footer id="footer">
+    <ul class="copyright">
+        <li>&copy; Moodule - MIT license</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>Jekyll integration: <a href="http://github.com/moodule" target="_blank">Moodule</a></li><li><a href="https://moodule.github.io/en/legal-terms/" target="_blank">Legal Terms</a></li><li><a href="https://moodule.github.io/en/privacy-policy/" target="_blank">Privacy Policy</a></li></ul>
+</footer>
+
+
+        </div>
+
+        <!-- Scripts -->
+<script src="https://moodule.github.io/assets/js/jquery.min.js" type="text/javascript" ></script>
+<script src="https://moodule.github.io/assets/js/browser.min.js" type="text/javascript" ></script>
+<script src="https://moodule.github.io/assets/js/breakpoints.min.js" type="text/javascript" ></script>
+<script src="https://moodule.github.io/assets/js/lazy-loading.js" type="text/javascript" ></script>
+<script src="https://moodule.github.io/assets/js/main.js" type="text/javascript" ></script>
+<script src="https://moodule.github.io/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" ></script>
+<script>
+window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+            "background": "#252e39"
+        },
+        "button": {
+            "background": "#14a7d0"
+        }
+    }
+});
+</script>
+
+    </body>
+</html>
