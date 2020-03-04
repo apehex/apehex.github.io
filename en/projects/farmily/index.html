@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+    Ethereal by HTML5 UP
+    html5up.net | @ajlkn
+    Ported into a Jekyll template by MOODULE
+    https://moodule.github.io | @moodule
+    Free for personal and commercial use under the CCA 4.0 license
+-->
+<html lang="en">
+    
+    <head>
+    <title>Find your dream home! - </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/main.css" media="all" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/large.css" media="screen and (min-width: 981px)" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/medium.css" media="screen and (min-width: 737px) and (max-width:980px)" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/small.css" media="screen and (max-width:736px)" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/short.css" media="screen and (min-aspect-ratio:16/7)" />
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+    <link rel="preload" href="https://moodule.github.io/assets/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+    <link rel="preload" href="https://moodule.github.io/assets/css/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="en" href="/en/projects/farmily/" /><link rel="icon" href="https://moodule.github.io/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" /></noscript>
+    <noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/fontawesome-all.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/cookieconsent.min.css" /></noscript>
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Find your dream home! | Open Sourcerer / Vagabond Coder</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Find your dream home!" />
+<meta name="author" content="apehex" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally." />
+<meta property="og:description" content="I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally." />
+<link rel="canonical" href="https://moodule.github.io/en/projects/farmily/" />
+<meta property="og:url" content="https://moodule.github.io/en/projects/farmily/" />
+<meta property="og:site_name" content="Open Sourcerer / Vagabond Coder" />
+<script type="application/ld+json">
+{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://moodule.github.io/assets/images/logo.png"},"name":"apehex"},"url":"https://moodule.github.io/en/projects/farmily/","headline":"Find your dream home!","author":{"@type":"Person","name":"apehex"},"description":"I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+    <body class="is-preload">
+
+        <div id="language-selector">
+	<ul class="language"><li>
+		    <a href="https://moodule.github.io/en/projects/farmily/" class="en">en</a>
+		</li></ul>
+</div>
+
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Wrapper -->
+            <div id="wrapper">
+
+                <section
+class="panel banner 3 right "
+id="banner"><!-- Banner -->
+<div class="content color0 span-3-75">
+    <h1 class="major">FARMILY<br />
+    </h1>
+    <p>Bargain your dream home!</p>
+    <ul class="actions">
+        <li>
+            <a
+            href="#map"
+            class="button primary color1 circle icon solid fa-angle-right">
+                Next
+            </a>
+        </li>
+    </ul>
+</div>
+<div
+class="image filtered span-1-75"
+data-position="25% 25%">
+    <img class="lazy-loading" src="https://moodule.github.io/assets/images/placeholder/halley-vi.webp" data-src="https://moodule.github.io/assets/images/content/halley-vi.webp" alt="" />
+</div>
+</section>
+<section
+class="panel map large right color1-alt"
+id="map"><link rel="stylesheet" href="https://moodule.github.io/assets/css/mapbox-gl.min.css" media="all">
+<link rel="stylesheet" href="https://moodule.github.io/assets/css/mapbox-gl.panel.min.css" media="all">
+<div class="intro  color1">
+    <h2 class="major">Current Selection</h2>
+    <p>Ads are aggregated, augmented and displayed in a convenient map.</p>
+</div>
+<div id='map-container'></div>
+<script>
+var data_points;
+
+function fillMapContainer() {
+    fetch("https://moodule.github.io/assets/data/farmily.json")
+        .then(response => response.json())
+        .then(json => data_points = json);
+    
+    mapboxgl.accessToken = "pk.eyJ1IjoibW9vZHVsZSIsImEiOiJjam1lcW1qNW0wcG9rM3dsbHY2N2ZyZ29iIn0.TkBXhBxfadbKKkRH7320Ng";
+    var map = new mapboxgl.Map({
+        container: "map-container",
+        style: "mapbox://styles/moodule/ck2zy2xee00rk1cnowy174a5l",
+        center: [5.0, 46.0],
+        zoom: 3,
+        dragPan: true
+    });
+
+    map.on('load', function () {
+
+        map.addLayer({
+            "id": "points",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": data_points
+            },
+            "layout": {
+                // get the icon name from the source's "icon" property
+                // concatenate the name to get an icon from the style's sprite sheet
+                "icon-image": ["concat", ["get", "icon"], "-15"],
+                "icon-size": 1,
+                "icon-allow-overlap": true,
+                // get the title name from the source's "title" property
+                "text-field": ["get", "title"],
+                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                "text-offset": [0, 0.6],
+                "text-anchor": "top"
+            },
+            "paint": {
+                "icon-color": "#ffcc00",
+                "icon-halo-color": "#2266AA",
+                "text-color": "#ffffff"
+            }
+        });
+
+    });
+
+    // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'points', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.summary;
+         
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+         
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+         
+    // Change the cursor to a pointer when the mouse is over the places layer.
+    map.on('mouseenter', 'points', function() {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+         
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function() {
+        map.getCanvas().style.cursor = '';
+    });
+}
+</script>
+<script src="https://moodule.github.io/assets/js/mapbox-gl.min.js" onload="fillMapContainer()" defer ></script>
+</section>
+
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <ul class="copyright">
+        <li>&copy; Moodule - MIT license</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>Jekyll integration: <a href="http://github.com/moodule" target="_blank">Moodule</a></li><li><a href="https://moodule.github.io/en/legal-terms/" target="_blank">Legal Terms</a></li><li><a href="https://moodule.github.io/en/privacy-policy/" target="_blank">Privacy Policy</a></li></ul>
+</footer>
+
+
+        <!-- Scripts -->
+<script src="https://moodule.github.io/assets/js/jquery.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/browser.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/lazy-loading.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/main.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/cookieconsent.style.min.js" type="text/javascript" defer ></script>
+
+    </body>
+</html>
