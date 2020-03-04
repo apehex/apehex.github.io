@@ -1,0 +1,38 @@
+---
+lang: en
+lang-ref: post-my-homespace-prepare
+index: 4
+panel-id: backup
+type: generic
+header:
+    title: Backup Your Files
+    description: >-
+        There's no may-be, data loss is <strong>guaranted</strong>!<br />Hopefully you're feeling the urge to backup this time?
+style:
+    size: 2
+    text:
+        position: right
+    background:
+        image:
+        color: color4
+    header:
+        color: color4-alt
+        joined: joined
+        span:
+---
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">Encrypt Your Files</h3>
+        <pre><code>$ gpgtar --verbose --encrypt --recipient moodule@protonmail.com \
+        --output /tmp/backup/documents.gpg ~/documents</code></pre>
+        <h3 class="major">Save To A Drive</h3>
+        <pre><code># rsync -avh --progress --update /tmp/backup/ /mnt/usb/backup/</code></pre>
+    </div>
+    <div class="span-3">
+        <h3 class="major">_</h3>
+        <p>Repeat for every directory you care about.</p>
+        <p>You should do this regularly.
+        Instead of keeping old folders / data around, pack it up and breath.</p>
+    </div>
+</div>
+
