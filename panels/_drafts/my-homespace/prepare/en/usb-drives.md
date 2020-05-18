@@ -29,5 +29,8 @@ style:
         <h3 class="major">Format a boot drive (optional)</h3>
         <pre><code># fdisk -c -u /dev/sdf</code></pre>
     </div>
+    <div class="span-3">
+        <h3 class="major">Remarks</h3>
+        <p>The firmware and live systems must be put on separate disks.</p>
 </div>
 
