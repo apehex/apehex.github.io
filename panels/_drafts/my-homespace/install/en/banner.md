@@ -1,15 +1,15 @@
 ---
 lang: en
-lang-ref: post-system-admin
+lang-ref: post-my-homespace-install
 index: 0
-panel-id: "banner"
+panel-id: banner
 type: banner
 header:
-    title: Preparations
+    title: Install
     description: >-
-        Just like my physical home, my mental space must be made for my needs.
+        Software & bootloader.
     button:
-        target: "#projects"
+        target: "#chroot"
         label: "Next"
 style:
     text:
@@ -22,11 +22,3 @@ style:
             content: "assets/images/content/pillars-of-creation.webp"
         color:
 ---
-- base system
-- firmware
-- extra packages
-- base
-- our own dists
-- second distribution, later on:
-  - reactivate raid + luks + lvm
-  - install in the assigned lv
