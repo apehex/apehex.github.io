@@ -1,6 +1,6 @@
 ---
 layout: collection
-collection: drafts
+collection: blog
 lang: en
 lang-ref: post-my-homespace-partition
 title: My Homespace

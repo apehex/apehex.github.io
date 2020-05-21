@@ -1,6 +1,6 @@
 ---
 layout: collection
-collection: drafts
+collection: blog
 lang: en
 lang-ref: post-my-homespace-rescue
 title: My Homespace
