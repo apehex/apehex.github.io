@@ -31,6 +31,12 @@ style:
     </div>
     <div class="span-3">
         <h3 class="major">Remarks</h3>
-        <p>The firmware and live systems must be put on separate disks.</p>
+        <p>
+            The firmware and live systems must be put on separate disks.
+        </p>
+        <p>
+            Although the physical drives are distinct, they may appear under the same device name.
+            <br />It happens when you plug the usb drives one after another, for example.
+        </p>
 </div>
 
