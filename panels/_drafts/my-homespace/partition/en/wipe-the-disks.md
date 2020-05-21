@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-partition
-index: 5
+index: 1
 panel-id: wipe-the-disks
 type: generic
 header:
@@ -23,7 +23,7 @@ style:
 <div class="inner columns aligned">
     <div class="span-4">
         <h3 class="major">Fill With Random Bits</h3>
-        <pre><code># cryptsetup luksFormat /dev/md0<br /># cryptsetup open /dev/md0 md0_crypt<br /># dd bs=1M status=progress if=/dev/zero of=/dev/mapper/md0_crypt<br /># cryptsetup close md0_crypt<br /># dd bs=512 count=2056 if=/dev/urandom of=/dev/md0</code></pre>
+        <pre><code># cryptsetup luksFormat /dev/sda<br /># cryptsetup open /dev/sda sda_crypt<br /># dd bs=1M status=progress if=/dev/zero of=/dev/mapper/sda_crypt<br /># cryptsetup close sda_crypt<br /># dd bs=512 count=2056 if=/dev/urandom of=/dev/sda</code></pre>
     </div>
     <div class="span-2">
         <h3 class="major">_</h3>
@@ -32,4 +32,3 @@ style:
         <p>Repeat for every drive you have: SSD, HDD, etc.</p>
     </div>
 </div>
-
