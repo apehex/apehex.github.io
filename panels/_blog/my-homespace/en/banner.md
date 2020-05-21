@@ -7,7 +7,7 @@ type: banner
 header:
     title: My Homespace
     description: >-
-        A luxurious space, chores automated away, full of sensational cyberscape, equiped like the Mossad.
+        LVM on LUKS on RAID... With a separate boot and data drives.
     button:
         target: "#prepare"
         label: "Next"
