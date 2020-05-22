@@ -25,7 +25,7 @@
     <noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/cookieconsent.min.css" /></noscript>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>My Homespace | Open Sourcerer / Vagabond Coder</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:title" content="My Homespace" />
 <meta name="author" content="Moodule" />
 <meta property="og:locale" content="en" />
@@ -37,7 +37,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-08T00:00:00+01:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://moodule.github.io/en/blog/my-homespace/partition/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://moodule.github.io/assets/images/logo.png"},"name":"Moodule"},"headline":"My Homespace","dateModified":"2020-01-08T00:00:00+01:00","datePublished":"2020-01-08T00:00:00+01:00","description":"I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally.","author":{"@type":"Person","name":"Moodule"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://moodule.github.io/en/blog/my-homespace/partition/"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://moodule.github.io/assets/images/logo.png"},"name":"Moodule"},"url":"https://moodule.github.io/en/blog/my-homespace/partition/","headline":"My Homespace","dateModified":"2020-01-08T00:00:00+01:00","datePublished":"2020-01-08T00:00:00+01:00","description":"I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally.","author":{"@type":"Person","name":"Moodule"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://moodule.github.io/en/blog/my-homespace/partition/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -90,13 +90,94 @@ id="wipe-the-disks"><div class="intro joined color1-alt">
 <div class="inner columns aligned">
     <div class="span-4">
         <h3 class="major">Fill With Random Bits</h3>
-        <pre><code># cryptsetup luksFormat /dev/md0<br /># cryptsetup open /dev/md0 md0_crypt<br /># dd bs=1M status=progress if=/dev/zero of=/dev/mapper/md0_crypt<br /># cryptsetup close md0_crypt<br /># dd bs=512 count=2056 if=/dev/urandom of=/dev/md0</code></pre>
+        <pre><code># cryptsetup luksFormat /dev/sda<br /># cryptsetup open /dev/sda sda_crypt<br /># dd bs=1M status=progress if=/dev/zero of=/dev/mapper/sda_crypt<br /># cryptsetup close sda_crypt<br /># dd bs=512 count=2056 if=/dev/urandom of=/dev/sda</code></pre>
     </div>
     <div class="span-2">
         <h3 class="major">_</h3>
         <p>Enter a random single-use password.</p>
         <p>Courtesy of <a href="https://www.linuxglobal.com/quickly-fill-a-disk-with-random-bits-without-dev-urandom/">Eric Wheeler @Linux-Global</a>.</p>
         <p>Repeat for every drive you have: SSD, HDD, etc.</p>
+    </div>
+</div>
+
+</section>
+<section
+class="panel generic 2 right color2"
+id="create-raid-array"><div class="intro joined color2-alt">
+    <h2 class="major">RAID Array</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">UEFI</h3>
+        <pre><code># mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 \
+/dev/md/ESP \
+/dev/sda1 /dev/sdb1</code></pre>
+        <h3 class="major">Root</h3>
+        <pre><code># mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 \
+/dev/md/root \
+/dev/sda2 /dev/sdb2</code></pre>
+    </div>
+</div>
+
+</section>
+<section
+class="panel generic 2 right color2"
+id="create-luks-container"><div class="intro joined color2-alt">
+    <h2 class="major">LUKS Container</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">Root</h3>
+        <pre><code># cryptsetup -y -v --type luks1 luksFormat /dev/md/root
+# cryptsetup open /dev/md/root md_crypt</code></pre>
+        <h3 class="major">Data</h3>
+        <pre><code># cryptsetup -y -v --type luks luksFormat /dev/sdc1
+# cryptsetup open /dev/sdc1 sdc1_crypt</code></pre>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color3"
+id="create-logical-volumes"><div class="intro joined color3-alt">
+    <h2 class="major">LVM</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">Root</h3>
+        <pre><code># pvcreate /dev/mapper/md_crypt
+# vgcreate lvg /dev/mapper/md_crypt</code></pre>
+        <h3 class="major">Logical Volumes</h3>
+        <pre><code># lvcreate -L 8G -n swap lvg
+# lvcreate -L 8G -n tmp lvg
+# lvcreate -L 4G -n var lvg
+# lvcreate -L 24G -n root lvg
+# lvcreate -L 80G -n home lvg</code></pre>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color4"
+id="file-systems"><div class="intro joined color4-alt">
+    <h2 class="major">Format File Systems</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-4">
+        <h3 class="major">Boot</h3>
+        <pre><code># mkfs.fat -F 32 /dev/md/ESP</code></pre>
+        <pre><code># mkfs.ext4 /dev/mapper/lvg-root
+# mkfs.ext4 /dev/mapper/lvg-home
+# mkfs.ext4 /dev/mapper/lvg-tmp
+# mkfs.ext4 /dev/mapper/lvg-var</code></pre>
+        <pre><code># mkswap /dev/mapper/lvg-swap</code></pre>
+        <pre><code># mkfs.ext4 /dev/mapper/sdc1_crypt</code></pre>
     </div>
 </div>
 
