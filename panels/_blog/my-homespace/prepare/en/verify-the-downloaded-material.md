@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-prepare
-index: 10
+index: 4
 panel-id: verify-the-downloaded-material
 type: generic
 header:
@@ -26,9 +26,9 @@ style:
         <pre><code>gpg import some.key<br />gpg --edit-key some.key<br />gpg> trust<br />gpg> save</code></pre>
         <h3 class="major">Verify</h3>
         <pre><code>gpg --verify file.sig file</code></pre>
-        <pre><code>md5sum file</code></pre>
+        <pre><code>sha256sum file</code></pre>
     </div>
-    <div class="span-3">
+    <div class="span-2">
         <h3 class="major">Be Suspicious</h3>
         <p>
             Pay attention to the origin & validity of the key.

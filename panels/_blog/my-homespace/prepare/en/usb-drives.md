@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-prepare
-index: 3
+index: 5
 panel-id: usb-drives
 type: generic
 header:
@@ -29,14 +29,12 @@ style:
         <h3 class="major">Format a boot drive (optional)</h3>
         <pre><code># fdisk -c -u /dev/sdf</code></pre>
     </div>
-    <div class="span-3">
+    <div class="span-2">
         <h3 class="major">Remarks</h3>
-        <p>
-            The firmware and live systems must be put on separate disks.
-        </p>
-        <p>
-            Although the physical drives are distinct, they may appear under the same device name.
-            <br />It happens when you plug the usb drives one after another, for example.
-        </p>
+        <p>The firmware and live systems must be put on separate disks.<br />
+            The boot can be either on the hard drive or yet another usb drive.</p>
+        <p>Although the physical drives are distinct, they may appear under the same device name.<br />
+            It happens when you plug the usb drives one after another, for example.</p>
+    </div>
 </div>
 

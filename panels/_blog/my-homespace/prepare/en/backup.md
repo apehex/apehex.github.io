@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-prepare
-index: 4
+index: 3
 panel-id: backup
 type: generic
 header:
@@ -29,10 +29,12 @@ style:
 ~/documents
         </code></pre>
         <h3 class="major">Save To A Drive</h3>
-        <pre><code># rsync -avh --progress --update /tmp/backup/ /mnt/usb/backup/</code></pre>
+        <pre><code># rsync -avh --progress --update \
+/tmp/backup/ \
+/mnt/usb/backup/</code></pre>
     </div>
     <div class="span-3">
-        <h3 class="major">_</h3>
+        <h3 class="major">Things WILL go wrong</h3>
         <p>
             Repeat for every directory you care about.
             <br />You should do this regularly.
