@@ -1,10 +1,10 @@
 ---
 layout: collection
-collection: blog
+collection: homespace
 lang: en
-lang-ref: post-my-homespace-prepare
+lang-ref: post-my-homespace
 title: My Homespace
 date: 2020-01-08
 author: Moodule
-categories: en blog
+categories: en
 ---

@@ -53,6 +53,8 @@ collections:
     output: false
   home:
     output: false
+  homespace:
+    output: false
   posts:
     output: false
   projects:
