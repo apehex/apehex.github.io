@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-install
-index: 1
+index: 2
 panel-id: chroot
 type: generic
 header:
@@ -14,26 +14,26 @@ style:
         position: right
     background:
         image:
-        color: color1
+        color: color2
     header:
-        color: color1-alt
+        color: color2-alt
         joined: joined
         span:
 ---
 <div class="inner columns aligned">
-    <div class="span-3">
-        <pre><code># mkdir /target
-# mount /dev/mapper/lvg-root /target/
-# mount /dev/mapper/lvg-tmp /target/tmp
-# mount /dev/mapper/lvg-var /target/var
-# mount -o bind /proc /target/proc
+    <div class="span-2">
+        <pre><code># mkdir -p /target/proc
+# mkdir -p /target/dev/pts
+# mkdir -p /target/sys
+# mkdir -p /target/run</code></pre>
+        <pre><code># mount -o bind /proc /target/proc
 # mount -o bind /dev /target/dev
 # mount -o bind /dev/pts /target/dev/pts
 # mount -o bind /sys /target/sys
+# mount -o bind /run /target/run
         </code></pre>
         <pre><code># cd /target
 # LANG=C.UTF-8 chroot /target /bin/bash
-# mount /dev/md0/ESP /boot/efi
         </code></pre>
     </div>
 </div>

@@ -24,7 +24,7 @@ style:
     <div class="span-2">
         <h3 class="major">Generate The Boot Image</h3>
         <pre><code># update-initramfs -u
-# update-grub</code></pre>
+# grub-mkconfig -o /boot/grub/grub.cfg</code></pre>
     </div>
 </div>
 

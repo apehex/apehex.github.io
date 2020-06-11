@@ -7,7 +7,7 @@ type: banner
 header:
     title: Install
     description: >-
-        Software & bootloader.
+        OS, softwares & bootloader.
     button:
         target: "#chroot"
         label: "Next"
