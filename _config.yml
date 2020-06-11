@@ -47,8 +47,6 @@ collections_dir: panels
 collections:
   about:
     output: false
-  blog:
-    output: false
   drafts:
     output: false
   home:
