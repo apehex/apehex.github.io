@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-prepare
-index: 6
+index: 7
 panel-id: launch-live-install
 type: generic
 header:
@@ -14,9 +14,9 @@ style:
         position: right
     background:
         image:
-        color: color3
+        color: color1
     header:
-        color: color3-alt
+        color: color1-alt
         joined: joined
         span:
 ---

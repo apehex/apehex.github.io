@@ -14,14 +14,14 @@ style:
         position: right
     background:
         image:
-        color: color1
+        color: color4
     header:
-        color: color1-alt
+        color: color4-alt
         joined: joined
         span:
 ---
 <div class="inner columns aligned">
-    <div class="span-3">
+    <div class="span-2">
         <h3 class="major">Enlarge Your Web Of Trust</h3>
         <pre><code>gpg import some.key<br />gpg --edit-key some.key<br />gpg> trust<br />gpg> save</code></pre>
         <h3 class="major">Verify</h3>

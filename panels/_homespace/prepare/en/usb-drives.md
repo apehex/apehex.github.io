@@ -1,7 +1,7 @@
 ---
 lang: en
 lang-ref: post-my-homespace-prepare
-index: 5
+index: 6
 panel-id: usb-drives
 type: generic
 header:

@@ -14,14 +14,14 @@ style:
         position: right
     background:
         image:
-        color: color1
+        color: color3
     header:
-        color: color1-alt
+        color: color3-alt
         joined: joined
         span:
 ---
 <div class="inner columns aligned">
-    <div class="span-4">
+    <div class="span-3">
         <h3 class="major">Encrypt Your Files</h3>
         <pre><code>$ gpgtar --verbose --encrypt \
 --recipient moodule@protonmail.com \
