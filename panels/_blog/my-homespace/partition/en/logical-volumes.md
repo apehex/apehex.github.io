@@ -29,7 +29,7 @@ style:
         <pre><code># lvcreate -L 8G -n swap lvg
 # lvcreate -L 8G -n tmp lvg
 # lvcreate -L 4G -n var lvg
-# lvcreate -L 24G -n root lvg
+# lvcreate -L 32G -n root lvg
 # lvcreate -L 80G -n home lvg</code></pre>
     </div>
 </div>

@@ -22,13 +22,9 @@ style:
 ---
 <div class="inner columns aligned">
     <div class="span-4">
-        <h3 class="major">UEFI</h3>
-        <pre><code># mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 \
-/dev/md/ESP \
-/dev/sda1 /dev/sdb1</code></pre>
         <h3 class="major">Root</h3>
-        <pre><code># mdadm --create --verbose --level=1 --metadata=1.2 --raid-devices=2 \
-/dev/md/root \
-/dev/sda2 /dev/sdb2</code></pre>
+        <pre><code># mdadm --create --verbose --level=0 --metadata=1.2 --raid-devices=2 \
+/dev/md0 \
+/dev/sda1 /dev/sdb1</code></pre>
     </div>
 </div>

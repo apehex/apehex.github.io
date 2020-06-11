@@ -5,9 +5,9 @@ index: 5
 panel-id: file-systems
 type: generic
 header:
-    title: Format File Systems
+    title: Format
     description: >-
-        
+        Create the file systems.
 style:
     size: 2
     text:
@@ -23,7 +23,7 @@ style:
 <div class="inner columns aligned">
     <div class="span-4">
         <h3 class="major">Boot</h3>
-        <pre><code># mkfs.fat -F 32 /dev/md/ESP</code></pre>
+        <pre><code># mkfs.fat -F 32 /dev/sdd1</code></pre>
         <pre><code># mkfs.ext4 /dev/mapper/lvg-root
 # mkfs.ext4 /dev/mapper/lvg-home
 # mkfs.ext4 /dev/mapper/lvg-tmp

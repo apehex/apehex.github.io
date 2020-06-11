@@ -23,7 +23,7 @@ style:
 <div class="inner columns aligned">
     <div class="span-4">
         <h3 class="major">Root</h3>
-        <pre><code># cryptsetup -y -v --type luks1 luksFormat /dev/md/root
+        <pre><code># cryptsetup -y -v --type luks luksFormat /dev/md0
 # cryptsetup open /dev/md/root md_crypt</code></pre>
         <h3 class="major">Data</h3>
         <pre><code># cryptsetup -y -v --type luks luksFormat /dev/sdc1
