@@ -7,7 +7,7 @@ type: banner
 header:
     title: "About Me"
     description: >-
-        Things I learned, <br/>Memories that haunt me, <br/>Fantasies that drive me.<br/><br/>~~~~~~~~*\o/~~~~~/\*~~~~~~~
+        I'm a vagabond tinkerer, living in the open. <br/><br/> I have a kink for tensors, I love functional programming and processing signals for hidden meaning. <br/><br/>I spend what's left of my time in remote places, they bring me back to the present to feel and think my way, literally.<br/><br/>~~~~~~~~*\o/~~~~~/\*~~~~~~~
     button:
         target: "#resume"
         label: "Next"
