@@ -76,6 +76,7 @@ theme: jekyll-theme-ethereal
 permalink: /:categories/:title/
 markdown: kramdown
 sass:
+  sourcemap: never
   style: compressed
 
 # Publication settings
