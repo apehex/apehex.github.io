@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+    Ethereal by HTML5 UP
+    html5up.net | @ajlkn
+    Ported into a Jekyll template by MOODULE
+    https://moodule.github.io | @moodule
+    Free for personal and commercial use under the CCA 4.0 license
+-->
+<html lang="en">
+    
+    <head>
+    <title>My Homespace - </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/main.css" media="all" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/large.css" media="screen and (min-width: 981px)" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/medium.css" media="screen and (min-width: 737px) and (max-width:980px)" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/small.css" media="screen and (max-width:736px)" />
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/short.css" media="screen and (min-aspect-ratio:16/7)" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" as="style" type="text/css" media="all">
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/fontawesome-all.min.css" as="style" type="text/css" media="all">
+    <link rel="stylesheet" href="https://moodule.github.io/assets/css/cookieconsent.min.css" as="style" type="text/css" media="all"><link rel="alternate" hreflang="en" href="/en/my-homespace/install/" /><link rel="icon" href="https://moodule.github.io/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" /></noscript>
+    <noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/fontawesome-all.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://moodule.github.io/assets/css/cookieconsent.min.css" /></noscript>
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>My Homespace | Open Sourcerer / Vagabond Coder</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="My Homespace" />
+<meta name="author" content="Moodule" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally." />
+<meta property="og:description" content="I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally." />
+<link rel="canonical" href="https://moodule.github.io/en/my-homespace/install/" />
+<meta property="og:url" content="https://moodule.github.io/en/my-homespace/install/" />
+<meta property="og:site_name" content="Open Sourcerer / Vagabond Coder" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-20T00:00:00+02:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"My Homespace","dateModified":"2020-05-20T00:00:00+02:00","datePublished":"2020-05-20T00:00:00+02:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://moodule.github.io/assets/images/logo.png"},"name":"Moodule"},"url":"https://moodule.github.io/en/my-homespace/install/","mainEntityOfPage":{"@type":"WebPage","@id":"https://moodule.github.io/en/my-homespace/install/"},"author":{"@type":"Person","name":"Moodule"},"description":"I’m a vagabond tinkerer, doing my best to give back to Open Source. I have a kink for tensors, I love functional programming and processing signals for hidden meaning. I spend what’s left of my time in remote places, they bring me back to the present to feel and think my way, literally.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+    <body class="is-preload">
+
+        <div id="language-selector">
+	<ul class="language"><li>
+		    <a href="https://moodule.github.io/en/my-homespace/install/" class="en">en</a>
+		</li></ul>
+</div>
+
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Wrapper -->
+            <div id="wrapper">
+
+                <section
+class="panel banner 3 right "
+id="banner"><!-- Banner -->
+<div class="content color0 span-3-75">
+    <h1 class="major">Install<br />
+    </h1>
+    <p>OS, bootloader & softwares.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.</p>
+    <ul class="actions">
+        <li>
+            <a
+            href="#chroot"
+            class="button primary color1 circle icon solid fa-angle-right">
+                Next
+            </a>
+        </li>
+    </ul>
+</div>
+<div
+class="image filtered span-1-75"
+data-position="25% 25%">
+    <img class="lazy-loading" src="https://moodule.github.io/assets/images/placeholder/pillars-of-creation.webp" data-src="https://moodule.github.io/assets/images/content/pillars-of-creation.webp" alt="" />
+</div>
+</section>
+<section
+class="panel generic 2 right color1"
+id="base"><div class="intro joined color1-alt">
+    <h2 class="major">Base System</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-2">
+        <h3 class="major">/target/etc/apt/sources.list</h3>
+        <pre><code>deb http://deb.debian.org/debian/ <i>stable</i> main non-free contrib
+deb-src http://deb.debian.org/debian/ <i>stable</i> main non-free contrib</code></pre>
+        <h3 class="major">Install the base</h3>
+        <pre><code># debootstrap --arch=amd64 <i>stable</i> /target http://deb.debian.org/debian/</code></pre>
+    </div>
+    <div class="span-2">
+        <h3 class="major">(/target)/etc/pacman.d/mirrorlist</h3>
+        <p>Reorder the mirror list.</p>
+        <h3 class="major">Install the base</h3>
+        <pre><code># pacstrap /target base linux linux-firmware</code></pre>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color2"
+id="chroot"><div class="intro joined color2-alt">
+    <h2 class="major">Chroot</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-2">
+        <pre><code># mkdir -p /target/proc
+# mkdir -p /target/dev/pts
+# mkdir -p /target/sys
+# mkdir -p /target/run</code></pre>
+        <pre><code># mount -o bind /proc /target/proc
+# mount -o bind /dev /target/dev
+# mount -o bind /dev/pts /target/dev/pts
+# mount -o bind /sys /target/sys
+# mount -o bind /run /target/run
+        </code></pre>
+        <pre><code># cd /target
+# LANG=C.UTF-8 chroot /target /bin/bash
+        </code></pre>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color2"
+id="bootloader"><div class="intro joined color2-alt">
+    <h2 class="major">Bootloader</h2>
+    <p></p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-2">
+        <h3 class="major">Generate The Boot Image</h3>
+        <pre><code># update-initramfs -u
+# grub-mkconfig -o /boot/grub/grub.cfg</code></pre>
+    </div>
+</div>
+
+
+</section>
+<section
+class="panel generic 2 right color4"
+id="configure"><div class="intro joined color4-alt">
+    <h2 class="major">Configure</h2>
+    <p>For your specific usage.</p>
+</div>
+<div class="inner columns aligned">
+    <div class="span-2">
+        <h3 class="major">(/target)/etc/locale.gen</h3>
+        <p>Uncomment the desired locales in /target/etc/locale.gen</p>
+        <pre><code># locale-gen</code></pre>
+        <h3 class="major">(/target)/etc/locale.conf</h3>
+        <pre><code>LANG=en_US.UTF-8</code></pre>
+        <h3 class="major">(/target)/etc/vconsole.conf</h3>
+        <pre><code>KEYMAP=fr
+FONT=lat9w-16</code></pre>
+    </div>
+    <div class="span-2">
+        <h3 class="major">(/target)/etc/hostname</h3>
+        <pre><code><i>nomad</i></code></pre>
+        <h3 class="major">(/target)/etc/hosts</h3>
+        <pre><code>127.0.0.1 localhost
+::1       localhost
+127.0.1.1 <i>nomad</i>.localdomain <i>nomad</i></code></pre>
+    </div>
+    <div class="span-4">
+        <h3 class="major">(/target)/etc/default/grub</h3>
+        <pre><code>GRUB_TIMEOUT=5
+GRUB_PRELOAD_MODULES="lvm"
+GRUB_CMDLINE_LINUX_DEFAULT="splash"
+GRUB_CMDLINE_LINUX="cryptdevice=UUID=<i>&lt;UUID&gt;</i>:md_crypt root=/dev/mapper/<i>root-volume</i>"</code></pre>
+        <h3 class="major">(/target)/etc/crypttab</h3>
+        <pre><code>md_crypt UUID=<i>&lt;UUID&gt;</i> none luks,discard</code></pre>
+        <h3 class="major">(/target)/etc/cryptsetup-initramfs/conf-hook</h3>
+        <pre><code>CRYPTSETUP=y</code></pre>
+    </div>
+    <div class="span-2">
+        <h3 class="major">(/target)/etc/default/grub</h3>
+        <p>Only modify / add the given lines.<br /><i>&lt;UUID&gt; designates the crypt container not the (logical) volumes inside.</i></p>
+    </div>
+</div>
+
+
+</section>
+
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <ul class="copyright">
+        <li>&copy; Moodule - MIT license</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>Jekyll integration: <a href="http://github.com/moodule" target="_blank">Moodule</a></li><li><a href="https://moodule.github.io/en/legal-terms/" target="_blank">Legal Terms</a></li><li><a href="https://moodule.github.io/en/privacy-policy/" target="_blank">Privacy Policy</a></li></ul>
+</footer>
+
+
+        <!-- Scripts -->
+<script src="https://moodule.github.io/assets/js/jquery.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/browser.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/lazy-loading.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/main.min.js" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" defer ></script>
+<script src="https://moodule.github.io/assets/js/cookieconsent.style.min.js" type="text/javascript" defer ></script>
+
+    </body>
+</html>
