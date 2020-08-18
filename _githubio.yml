@@ -40,8 +40,8 @@ privacy_policy:
 
 # Recaptcha in forms
 recaptcha:
-  sitekey: 6LfMnsgUAAAAAHVZt3lPn_Y5siUXGOBaTQ3cRoZ0
-  secretkey: 6LfMnsgUAAAAAAkLz37gvsJ2lpELPfi9WhS04HoT
+  sitekey: 6Lf0dsgUAAAAAPIfVhsWsLRdBOUAdFlf_FGvu9zJ
+  secretkey: 6Lf0dsgUAAAAAL-0D23yg2WRj71yz-kCZRe-PxTk
 
 # Collections
 collections_dir: panels
