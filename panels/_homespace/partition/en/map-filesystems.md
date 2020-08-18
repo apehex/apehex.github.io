@@ -7,7 +7,7 @@ type: generic
 header:
     title: Index
     description: >-
-        Link the filesystems to their targets.
+        Map the filesystems to their target devices.
 style:
     size: 2
     text:
