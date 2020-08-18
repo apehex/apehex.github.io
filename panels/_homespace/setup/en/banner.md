@@ -1,15 +1,15 @@
 ---
 lang: en
-lang-ref: post-my-homespace-install
+lang-ref: post-my-homespace-setup
 index: 0
 panel-id: banner
 type: banner
 header:
-    title: Install
+    title: Setup
     description: >-
-        OS, bootloader & softwares.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
+        Adapt the OS to your needs.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
     button:
-        target: "#chroot"
+        target: "#"
         label: "Next"
 style:
     text:

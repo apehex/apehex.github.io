@@ -7,7 +7,7 @@ type: banner
 header:
     title: Preparations
     description: >-
-        Just like my physical home, my mental space must be made for my needs.
+        Just like my physical home, my mental space must be made for my needs.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
     button:
         target: "#download-the-files"
         label: "Next"
