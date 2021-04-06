@@ -17,4 +17,4 @@
   <a href="https://apehex.github.io/blog">Blog</a>
 </p>
 
-Code released under the [MIT License](https://github.com/apehex/apehex.github.io/blob/master/LICENSE).
+Code released under the [MIT License](https://github.com/apehex/apehex.github.io/master/.github/LICENSE).
