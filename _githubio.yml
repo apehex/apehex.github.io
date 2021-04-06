@@ -12,12 +12,12 @@ state: Rhône Alpes
 zip_code: 69005
 country: France
 phone:
-email: moodule@protonmail.com
+email: apehex@protonmail.com
 
 # Social settings
 github:
-  url: https://github.com/moodule
-  label: "@moodule"
+  url: https://github.com/apehex
+  label: "@apehex"
 gitlab:
   url:
   label:
@@ -82,10 +82,10 @@ sass:
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://moodule.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://apehex.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author: apehex
 copyright:
-  holder: Moodule
+  holder: apehex
   license: MIT license
 
 # Exclude from processing

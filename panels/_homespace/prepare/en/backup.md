@@ -24,7 +24,7 @@ style:
     <div class="span-3">
         <h3 class="major">Encrypt Your Files</h3>
         <pre><code>$ gpgtar --verbose --encrypt \
---recipient moodule@protonmail.com \
+--recipient apehex@protonmail.com \
 --output /tmp/backup/documents.gpg \
 ~/documents
         </code></pre>

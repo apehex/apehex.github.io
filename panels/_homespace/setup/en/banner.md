@@ -7,7 +7,7 @@ type: banner
 header:
     title: Setup
     description: >-
-        Adapt the OS to your needs.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
+        Adapt the OS to your needs.<br>The operations are automated in <a href="https://github.com/apehex/homesick">scripts</a>.
     button:
         target: "#"
         label: "Next"

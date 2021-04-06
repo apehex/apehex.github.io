@@ -7,7 +7,7 @@ type: banner
 header:
     title: Install
     description: >-
-        OS, bootloader & softwares.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
+        OS, bootloader & softwares.<br>The operations are automated in <a href="https://github.com/apehex/homesick">scripts</a>.
     button:
         target: "#chroot"
         label: "Next"

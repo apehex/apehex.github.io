@@ -7,7 +7,7 @@ type: banner
 header:
     title: Rescue
     description: >-
-        Salvage a broken system.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
+        Salvage a broken system.<br>The operations are automated in <a href="https://github.com/apehex/homesick">scripts</a>.
     button:
         target: "#access-from-installer-shell"
         label: "Next"

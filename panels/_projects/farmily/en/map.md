@@ -12,7 +12,7 @@ header:
 data:
     file: "assets/data/farmily.json"
     token: "pk.eyJ1IjoibW9vZHVsZSIsImEiOiJjam1lcW1qNW0wcG9rM3dsbHY2N2ZyZ29iIn0.TkBXhBxfadbKKkRH7320Ng"
-    style: "mapbox://styles/moodule/ck2zy2xee00rk1cnowy174a5l"
+    style: "mapbox://styles/apehex/ck2zy2xee00rk1cnowy174a5l"
     zoom: 3
     center:
         latitude: 45.44

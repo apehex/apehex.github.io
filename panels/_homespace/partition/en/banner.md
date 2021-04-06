@@ -7,7 +7,7 @@ type: banner
 header:
     title: Partition The Disk
     description: >-
-        The most annoying part, get over it and sail.<br>The operations are automated in <a href="https://github.com/moodule/homesick">scripts</a>.
+        The most annoying part, get over it and sail.<br>The operations are automated in <a href="https://github.com/apehex/homesick">scripts</a>.
     button:
         target: "#wipe-the-disks"
         label: "Next"

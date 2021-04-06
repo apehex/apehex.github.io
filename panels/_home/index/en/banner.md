@@ -5,7 +5,7 @@ index: 0
 panel-id: "banner"
 type: banner
 header:
-    title: "MOODULE"
+    title: "APEHEX"
     description: >-
         ML, coding, cybersecurity, earthling thoughts.<br /><br />
         ~~~~~~~~*\o/~~~~~/\*~~~~~~~
