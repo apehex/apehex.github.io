@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://apehex.github.io/">
-    <img src="./assets/images/logo.png" alt="apehex logo" width="72" height="72">
+    <img src="../assets/images/logo.png" alt="apehex logo" width="72" height="72">
   </a>
 </p>
 
@@ -17,4 +17,4 @@
   <a href="https://apehex.github.io/blog">Blog</a>
 </p>
 
-Code released under the [MIT License](https://github.com/apehex/apehex.github.io/blob/master/.github/LICENSE).
+Code released under the [MIT License](https://github.com/apehex/apehex.github.io/master/.github/LICENSE).
