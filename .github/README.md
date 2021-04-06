@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://apehex.github.io/">
-    <img src="./assets/images/logo.png" alt="apehex logo" width="72" height="72">
+    <img src="../assets/images/logo.png" alt="apehex logo" width="72" height="72">
   </a>
 </p>
 
