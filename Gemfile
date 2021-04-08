@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.0"
 
 # Theme
-gem "jekyll-theme-ethereal"
+gem "jekyll-theme-commit"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

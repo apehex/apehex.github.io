@@ -73,7 +73,7 @@ defaults:
       lang: "fr"
 
 # Build settings
-theme: jekyll-theme-ethereal
+theme: jekyll-theme-commit
 permalink: /:categories/:title/
 markdown: kramdown
 sass:
