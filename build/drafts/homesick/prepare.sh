@@ -1,28 +1,24 @@
 #!/bin/bash
 
-mkdir prepare
-echo "Backup the data with rsync + gpgtar:
-- dotfiles
-- passwords
-- data
-- sources" >> prepare/backup
-git add .
-git commit --date="2020-06-12T00:00:00" --message="Backup"
+BUILD=$(realpath $(dirname $0))
 
-echo "
-The Distribution ISO:
-For Debian, it happens <a
-  href=\"https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/\">here</a>.</p>
-The \"Non-Free\" Firmware</h3>
-The drivers can be acquired separately from <a href="https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/">a tarball / zip file</a>.</p>
-Take Advantage Of Your Free Time!</h3>
-I'd suggest reading the excellent <a href="https://wiki.archlinux.org/">Archlinux wiki</a>.</p>
-We'll cover lots of ground, most significantly <a
-href="https://wiki.archlinux.org/index.php/RAID">RAID</a>, <a
-href="https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system">LUKS
-and system-wide encryption</a>, <a
-href="https://wiki.archlinux.org/index.php/LVM">LVM</a> and <a
-href="https://wiki.archlinux.org/index.php/Dual_boot_with_Windows">dual
-booting</a>.</p>"
-git add .
-git commit --date="2020-06-12T01:00:00" --message="Download the Materials & Read"
+mkdir -p homesick/prepare
+
+cp "$BUILD/prepare/the-scheme" homesick/prepare/the-scheme && git add .
+git commit --date="2020-06-11T00:00:00" --message="LVM on LUKS on RAID"
+
+cp "$BUILD/prepare/backup"  homesick/prepare/backup && git add .
+git commit --date="2020-06-11T01:00:00" --message="Data loss is guaranted"
+
+cp "$BUILD/prepare/download" homesick/prepare/downlad && git add .
+git commit --date="2020-06-11T02:00:00" --message="Get the required files"
+
+cp "$BUILD/prepare/verify" homesick/prepare/verify && git add .
+git commit --date="2020-06-11T03:00:00" --message="Verify the files"
+
+echo "$BUILD/prepare/adapt" homesick/prepare/adapt && git add .
+git commit --date="2020-06-11T04:00:00" --message="Resize the image to fit the drive (optional)"
+
+echo "$BUILD/prepare/burn" homesick/prepare/burn && git add .
+git commit --date="2020-06-11T05:00:00" --message="Burn the USB drives"
+

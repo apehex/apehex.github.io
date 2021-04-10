@@ -1,6 +1,8 @@
 #!/bin/bash
 
-./climbing-beta.sh
-./homesick/all.sh
-./tell-me-more.sh
-./yoguide.sh
+BUILD=$(realpath $(dirname $0))
+
+/bin/bash "$BUILD/climbing-beta.sh"
+/bin/bash "$BUILD/homesick/all.sh"
+/bin/bash "$BUILD/tell-me-more.sh"
+/bin/bash "$BUILD/yoguide.sh"

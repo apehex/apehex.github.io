@@ -1,0 +1,17 @@
+<h3>Expand the live image</h3>
+<pre><code># dd bs=1M count=<i>1024</i> status=progress oflag=sync if=/dev/zero \
+>> <i>~/downloads/debian.iso</i></code></pre>
+<h3>Resize the partitions</h3>
+<pre><code># losetup -f -P --show <i>~/downloads/debian.iso</i>
+# fdisk -c -u <i>/dev/loop0</i>
+p
+r
+<i>2</i>
+n
+p
+<i>2</i>
+100%</code></pre>
+<h3>Resize the file system</h3>
+<pre><code># e2fsck -f <i>/dev/loop0p2</i>
+# resize2fs <i>/dev/loop0p2</i>
+# losetup -d /dev/loop0</code></pre>

@@ -1,0 +1,11 @@
+<h3>The Live Install</h3>
+<pre><code># dd bs=4M status=progress oflag=sync if=~/downloads/debian.iso of=/dev/sdd</code></pre>
+<h3 class="major">The Non-Free Firmware</h3>
+<pre><code># mount /dev/sde1 /mnt/usb<br /># unzip ~/downloads/firmware.zip -d /mnt/usb/</code></pre>
+<h3>Format a boot drive (optional)</h3>
+<pre><code># fdisk -c -u /dev/sdf</code></pre>
+<h3>Remarks</h3>
+The firmware and live systems must be put on separate disks.
+The boot can be either on the hard drive or yet another usb drive.
+Although the physical drives are distinct, they may appear under the same device name.
+It happens when you plug the usb drives one after another, for example.

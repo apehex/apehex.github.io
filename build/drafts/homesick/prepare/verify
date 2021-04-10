@@ -1,0 +1,13 @@
+<h3>Enlarge Your Web Of Trust</h3>
+<pre><code>gpg import some.key<br />gpg --edit-key some.key<br />gpg> trust<br />gpg> save</code></pre>
+<h3>Verify</h3>
+<pre><code>gpg --verify file.sig file</code></pre>
+<pre><code>sha256sum file</code></pre>
+<h3>Be Suspicious</h3>
+Pay attention to the origin & validity of the key.
+Only import keys from trusted / known origins...
+Typically project maintainers, from their website.
+<p><br/></p>
+<h3>Protect Against Impersonation</h3>
+Verify the signature to validate the origin.
+Verify the checksum to validate the content.

@@ -1,0 +1,13 @@
+<h3>Encrypt Your Files</h3>
+<pre><code>$ gpgtar --verbose --encrypt \</code></pre>
+<pre><code>--recipient apehex@protonmail.com \</code></pre>
+<pre><code>--output /tmp/backup/documents.gpg \</code></pre>
+<pre><code>~/documents</code></pre>
+<h3>Save To A Drive</h3>
+<pre><code># rsync -avh --progress --update \</pre></code>
+<pre><code>/tmp/backup/ \</pre></code>
+<pre><code>/mnt/usb/backup/</code></pre></pre></code>
+<h3>Things WILL go wrong</h3>
+Repeat for every directory you care about.
+You should do this regularly.
+Instead of keeping old files around, pack it up and breath.
