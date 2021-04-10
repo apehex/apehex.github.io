@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# homesick / homespace
-git checkout content-root
-git checkout -b homesick
+BUILD=$(realpath $(dirname $0))
 
+git checkout projects
