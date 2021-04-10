@@ -1,13 +1,13 @@
 #!/bin/bash
 
-TARGET=${1:-"$(pwd)"}
+TARGET=$(realpath "$(dirname $0)/..")
 BUILD=$(mktemp -d)
 
 # move at the root of the target repo
 cd "$TARGET"
 
 # move the bin out of the repo so we can switch branch
-rsync -avh --progess "$TARGET/build/" "$BUILD"
+rsync -avh --progess "$TARGET" "$BUILD"
 
 # about
 /bin/bash "$BUILD/about/all.sh"
