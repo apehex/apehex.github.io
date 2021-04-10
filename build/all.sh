@@ -1,13 +1,13 @@
 #!/bin/bash
 
 TARGET=$(realpath "$(dirname $0)/..")
-BUILD=$(mktemp -d)
+BUILD="$(mktemp -d)/build"
 
 # move at the root of the target repo
 cd "$TARGET"
 
 # move the bin out of the repo so we can switch branch
-rsync -avh --progess "$TARGET" "$BUILD"
+cp -rv "$TARGET/build/" "$BUILD"
 
 # create the branches
 git checkout content-root -b about
