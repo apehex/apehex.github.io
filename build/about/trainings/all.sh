@@ -5,7 +5,7 @@ BUILD=$(realpath $(dirname $0))
 git checkout content-root -b trainings
 
 # ecl
-/bin/bash "$BUILD/trainings/2008_2012_ecl.sh"
+/bin/bash "$BUILD/2008_2012_ecl/all.sh"
 
 # ml
-/bin/bash "$BUILD/trainings/2015-07_2015-09_coursera_machine-learning.sh"
+/bin/bash "$BUILD/2016-07_2016-09_coursera/all.sh"
